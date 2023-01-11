@@ -16,6 +16,7 @@ job('ejemplo2-job-DSL') {
   }
   steps {
     shell("bash jobscript.sh")
+    githubPush()
   }
   publishers {
     mailer('jdrivera891@misena.edu.co', true, true)
