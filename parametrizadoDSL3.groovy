@@ -12,7 +12,7 @@ job('ejemplo4-job-DSL') {
     booleanParam('agente', false)
   }
   triggers {
-    cron('H/7 * * * *')
+    /*cron('H/7 * * * *')*/
     githubPush()
   }
   steps {
